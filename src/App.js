@@ -1,8 +1,7 @@
-
 import "./App.css";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import "./footer";
-import Footer from "./footer";
+//import Footer from "./footer";
 import { Suspense } from "react";
 
 const lngs = {
@@ -16,7 +15,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
         <div>
           {Object.keys(lngs).map((lng) => (
             <button
@@ -31,21 +29,17 @@ function App() {
             </button>
           ))}
         </div>
-        <p>
-          <Trans i18nKey="description.part1">
-            Edit <code>src/App.js</code> and save to reload.
-          </Trans>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {t("description.part2")}
-        </a>
+        <h1>{t("Branch")}</h1>
+        <ul>
+          <li>{t("Phone Number Details.Verify")}</li>
+          <li>{t("Phone Number Details.OTP")}</li>
+          <li>{t("Personal Details.firstName")}</li>
+          <li>{t("Personal Details.lastName")}</li>
+          <li>{t("Personal Details.gender")}</li>
+          <li>{t("Personal Details.postalCode")}</li>
+          <li>{t("Personal Details.dateOfBirth")}</li>
+        </ul>
       </header>
-      <Footer t={t} />
     </div>
   );
 }
