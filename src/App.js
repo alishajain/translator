@@ -1,7 +1,5 @@
 import "./App.css";
 import { useTranslation } from "react-i18next";
-import "./footer";
-//import Footer from "./footer";
 import { Suspense } from "react";
 
 const lngs = {
