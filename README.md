@@ -69,10 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-Installations required for i18n package:-
+# Installations required for i18n package:-
 
-# npm install i18next react-i18next i18next-browser-languagedetector
+### npm install i18next react-i18next i18next-browser-languagedetector
 These are for installing i18next, react-i18next and browser-language detector packages
 
-## npm install i18next-http-backend
+### npm install i18next-http-backend
 It is used for separating translation files from codethrough backend
